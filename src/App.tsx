@@ -1,18 +1,19 @@
-import { useState } from 'react'
 import './styles/theme.css'
 import './styles/global.css'
-import viteLogo from '/vite.svg'
+import { Container } from './components/Container'
 import { Heading } from './components/Heading'
 
-function App() {
-  const [count, setCount] = useState(0)
 
+export function App() {
   return (
-    <body>
-      <Heading />
-      <p>kajsbfaslfasnfksanfknsakfnsakfnsakfnskanfknaskfsakfnsakfnsakn</p>
-    </body>
+    <>
+      <Container>
+        <Heading>Logo</Heading>
+      </Container>
+
+      <Container>
+        <Heading>Menu</Heading>
+      </Container>
+    </>
   )
 }
-
-export default App
